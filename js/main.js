@@ -1,3 +1,5 @@
+"use strict";
+
 //헤더 검색바 부분
 const searchElement = document.querySelector(".search");
 const searchInputElement = searchElement.querySelector("input");
