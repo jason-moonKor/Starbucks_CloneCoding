@@ -1,23 +1,5 @@
 "use strict";
 
-//헤더 검색바 부분
-const searchElement = document.querySelector(".search");
-const searchInputElement = searchElement.querySelector("input");
-
-searchElement.addEventListener("click", () => {
-	searchInputElement.focus();
-});
-
-searchInputElement.addEventListener("focus", () => {
-	searchElement.classList.add("focused");
-	searchInputElement.setAttribute("placeholder", "통합검색");
-});
-
-searchInputElement.addEventListener("blur", () => {
-	searchElement.classList.remove("focused");
-	searchInputElement.setAttribute("placeholder", "");
-});
-
 // 뱃지 스크롤 부분( gsap 라이브러리)
 const badgeEl = document.querySelector("header .badges");
 const toTopEl = document.querySelector("#to-top");
@@ -151,6 +133,3 @@ spyEls.forEach((item) => {
 		.setClassToggle(item, "show")
 		.addTo(new ScrollMagic.Controller());
 });
-
-const thisYear = document.querySelector(".this-year");
-thisYear.textContent = new Date().getFullYear();
