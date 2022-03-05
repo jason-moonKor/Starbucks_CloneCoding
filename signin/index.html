@@ -26,8 +26,9 @@
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 		/>
 
-		<!-- 메인 css파일 -->
-		<link rel="stylesheet" href="../css/main.css" />
+		<!-- COMMON, Signin css파일 -->
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/signin.css" />
 
 		<!-- 오픈 그래프 -->
 		<meta property="og:type" content="website" />
@@ -41,7 +42,7 @@
 		<meta property="og:url" content="https://github.com/jason-moonKor" />
 
 		<!-- COMMON JS -->
-		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../js/common.js" />
 
 		<title>StarBucks 클론</title>
 	</head>
@@ -379,7 +380,31 @@
 			</div>
 		</header>
 
-		<section class="signin"></section>
+		<!-- 로그인 -->
+		<section class="signin">
+			<h1>LOGIN</h1>
+			<div class="signin__card">
+				<h2>
+					<strong>WELCOME !</strong>
+					스타벅스에 오신 것을 환영합니다.
+				</h2>
+				<form>
+					<input type="text" placeholder="아이디를 입력하세요" />
+					<input type="password" placeholder="비밀번호를 입력하세요" />
+					<input type="submit" value="로그인" />
+					<p>
+						* 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,
+						<br />
+						정기적으로 비밀번호를 변경하세요!
+					</p>
+				</form>
+				<div class="actions">
+					<a href="javascript:void(0)">회원가입</a>
+					<a href="javascript:void(0)">아이디 찾기</a>
+					<a href="javascript:void(0)">비밀번호 찾기</a>
+				</div>
+			</div>
+		</section>
 
 		<!-- FOOTER -->
 		<footer>
