@@ -5,5 +5,8 @@
 ### STACK and TOOL
 
 - gsap library
+- gsap ScrollToPlugin
 - Lodash library
 - Swiper
+- Youtube API
+- ScrollMagic library
